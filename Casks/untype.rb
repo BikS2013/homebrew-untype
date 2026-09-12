@@ -4,7 +4,7 @@ cask "untype" do
 
   url "https://github.com/BikS2013/untype-s/releases/download/v#{version.csv.first}-b#{version.csv.second}/untype-#{version.csv.first}.dmg"
   name "untype"
-  desc "Push-to-talk voice dictation for macOS with optional LLM refinement and translation"
+  desc "Push-to-talk voice dictation with optional LLM refinement and translation"
   homepage "https://github.com/BikS2013/untype-s"
 
   livecheck do
@@ -18,7 +18,7 @@ cask "untype" do
     end
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "untype.app"
 
